@@ -7,7 +7,6 @@ o	Implementation: Create simple, easy-to-read profiles for each breed with infor
 2.	Nearby Veterinary Hospitals Finder
 o	Objective: Ensure that farmers can easily find veterinary services for their indigenous cows.
 o	Feature: A map or search tool that allows users to find veterinary hospitals in their region.
-o	Implementation: Use a basic map API (like Google Maps or Mapbox) and link it to a simple database of hospitals. You can start by manually adding hospitals or using open data sources.
 3.	Dietary Guidance
 o	Objective: Provide farmers with dietary information to improve the health and longevity of their cows.
 o	Feature: A simple text-based guide or a small interactive tool that gives advice on cow nutrition, based on breed.
