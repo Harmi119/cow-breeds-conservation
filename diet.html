@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gir Cow Nutrition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://back2godhead.com/wp-content/uploads/2013/01/129_1977_12-11-27.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            color: #e0e0e0;
+        }
+
+        .container {
+            background-color: rgba(40, 40, 40, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+            margin: auto;
+            max-width: 700px;
+            margin-top: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        header {
+            background: linear-gradient(135deg, #291d5c, #462b04);
+            padding: 50px 0;
+            text-align: center;
+            border-radius: 15px;
+            color: rgb(231, 139, 173);
+            margin-bottom: 40px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            color: #e2b4b6;
+        }
+        h3 {
+            font-size: 60px;
+            font-weight: 700;
+            text-transform: italic;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(230, 122, 122, 0.7);
+        }
+
+
+        .nutrition-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .nutrition-description {
+            font-size: 25px;
+            color: #b2d0e9;
+            text-align: center;
+            text-transform: italic;
+            margin-bottom: 30px;
+        }
+
+        .nutrition-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .nutrition-item img {
+            width: 60px; /* Increased image size */
+            height: 60px; /* Increased image size */
+            border-radius: 12px; /* Slightly rounded corners */
+            object-fit: cover;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+        }
+
+        .tick {
+            color: #28a745;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .no-sign {
+            color: #dc3545;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .btn-light {
+            width: 100%;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            background: linear-gradient(to right, #631f31, #b05f7d);
+            color: rgb(234, 202, 202);
+            border: none;
+            padding: 15px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-light:hover {
+            background: linear-gradient(to right, #d95870, #66a09d);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>The Cow Companion</h2>
+        <p>Enhancing the Health and Productivity of Cows</p>
+    </header>
+    <div class="container">
+           <p class="nutrition-description ">✅Recommended food items for cows.</p>
+        
+        <ul>    
+            <li class="nutrition-item">
+                <img src="https://images.unsplash.com/photo-1533460004989-cef01064af7e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8fDA%3D" alt="Grass">
+                <strong>Grass:</strong> <span class="tick">✔</span> Primary grazing diet for natural feeding
+            </li>
+            <li class="nutrition-item">
+                <img src="https://5.imimg.com/data5/CH/VU/TQ/SELLER-18588789/dry-grass-mountain-hay.jpg" alt="Hay">
+                <strong>Hay:</strong> <span class="tick">✔</span> Dried grass for consistent fiber intake
+            </li>
+            <li class="nutrition-item">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/GR/FE/BT/47161101/rapeseed-oil-cake.png" alt="Oil Cakes">
+                <strong>Oil Cakes:</strong> <span class="tick">✔</span> Highly digestible and palatable for cows
+            </li>
+            <li class="nutrition-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUh6AEdQPuUrk15i164xiumWXl3xVXZrHuTQ&s">
+                <strong>Oats</strong> <span class="tick">✔</span> Easier to digest, especially for young or sick cows.
+            </li>
+            <li class="nutrition-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKe8WHIuh8CqCt1e_Xp2PZFjLEOZXFeTNS6g&s" alt="Beet Pulp">
+                <strong>Beet Pulp</strong> <span class="tick">✔</span> Offers a good source of energy, helping cows maintain their weight and productivity.Cows generally find it tasty, making it easier to incorporate into their diet.
+                <li class="nutrition-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27hKk1nMM3dd5H0d11ZXdWesh-P-xJLDhRQ&s" >
+                    <strong>Silage</strong> <span class="tick">✔</span> This is fermented forage (like corn or grass) that is stored in silos. It provides a good source of nutrients, especially during the winter months when fresh forage is scarce.
+                </li>
+                <li class="nutrition-item">
+                    <img src="https://static.toiimg.com/photo/105672842.cms" alt="Carrot">
+                    <strong>Carrot</strong> <span class="tick">✔</span> Carrots are rich in beta-carotene, which the cow's body converts to vitamin A
+                </li>
+                <li class="nutrition-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5cjM9ITclCLhy2eG1bD7dlVCXgWc8e0Uvw&s">
+                    <strong>Apples</strong> <span class="tick">✔</span> They provide dietary fiber, which is important for maintaining healthy digestion.
+                </li>
+                <li class="nutrition-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9yz1d_OrZBKB6TIWRyUtCIPBIjgyDOpybxw&s">
+                    <strong>Oranges</strong> <span class="tick">✔</span> A good source of vitamin c.
+                </li>
+                <li class="nutrition-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUwlt1oCTQNjnSTyXX9BQV4J89LaTmSdYrAw&s" alt="Hay">
+                    <strong>Pears</strong> <span class="tick">✔</span> Must serve in small quantity.
+                </li>
+                <p class="nutrition-description "> 🚫 Items unsuitable for consumption.</p>
+        
+                <ul>
+                    <li class="nutrition-item">
+                        <img src="https://eu-images.contentstack.com/v3/assets/blt4a147f9e36f0754a/blt9ce7c7dd03762d73/65200264d49b3310864f8069/plastic3feat_3.png" alt="Plastic">
+                        <strong>Plastic:</strong> <span class="no-sign">✖</span> Long-term plastic accumulation results in internal injuries, infections, and eventual death
+                    </li>
+                    <li class="nutrition-item">
+                        <img src="https://consumer-voice.org/wp-content/uploads/2022/02/processed-foods.jpg" alt="Processed Food">
+                        <strong>Processed Food:</strong> <span class="no-sign">✖</span> High levels of sugar, salt, and unhealthy fats in processed foods can lead to obesity, heart disease, and other health problems in cows
+                    </li>
+                    <li class="nutrition-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1oJfUvx6ZrpAsHTVAPfkcoUj7pF_Ep4Piig&s" alt="Plastic">
+                        <strong>NightShade Plant:</strong> <span class="no-sign">✖</span> NightShade Plant are toxic for cows
+                    </li>
+                    <li class="nutrition-item">
+                        <img src="https://media.istockphoto.com/id/528446230/photo/moldy-orange.jpg?s=612x612&w=0&k=20&c=UajncpAQYO1xStSssB_J8tPxnnJFWehce6wfwGjCVQI=" alt="Processed Food">
+                        <strong>Spoiled Feed</strong> <span class="no-sign">✖</span> Can contain harmful bacteria or toxins that can cause serious health issues.
+                    </li>
+                    <li class="nutrition-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROY0n2KjoJjzIgGhz42XAcPSFGDDxkqHXO9Q&s">
+                        <strong>Chocolate</strong> <span class="no-sign">✖</span> Contains theobromine, which is toxic to cows.
+                    </li>
+                    <li class="nutrition-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4HwaqP063-dv9asa_9SxcisjkciGoiY-ww&s" >
+                        <strong>Onions</strong> <span class="no-sign">✖</span> Can cause anemia in cows.
+                    </li>
+                </ul>
+        </ul>
+        
+        <a href="index.html" class="btn btn-light">Back to Home</a>
+    </div>
+</body>
+</html>

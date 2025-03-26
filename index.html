@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Cow Companion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://back2godhead.com/wp-content/uploads/2013/01/129_1977_12-11-27.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Montserrat', sans-serif;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(40, 40, 40, 0.85);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+            margin: auto;
+            max-width: 600px;
+            width: 95%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        header {
+            background: linear-gradient(135deg, #291d5c, #462b04);
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 15px;
+            color: white;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            color: #e2b4b6;
+        }
+
+        .form-control, .form-select {
+            border-radius: 30px;
+            padding: 18px;
+            border: 2px solid #eb8eb6;
+            background-color: #333;
+            color: #eee;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-primary {
+            width: 80%;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: 500; 
+            background: linear-gradient(135deg, #631f31, #b05f7d);
+            color: rgb(246, 248, 220);
+            border: none;
+            padding: 16px;
+            margin-top: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            display:list-item;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #b05f7d, #631f31);
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .form-select:focus, .form-control:focus {
+            border-color: #f0a0c0;
+            box-shadow: 0 0 0 0.25rem rgba(240, 160, 192, 0.25);
+        }
+
+        .mb-3 {
+            margin-bottom: 25px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .info-text {
+            color: #f0a0c0;
+            font-size: 16px;
+            text-align: center;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        h5 {
+            color: #f0a0c0;
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .additional-info {
+            text-align: center;
+            margin-top: 30px;
+            color: #ccc;
+            font-size: 16px;
+        }
+        footer {
+            background: linear-gradient(135deg, #291d5c, #462b04);
+            color: #e0e0e0;
+            padding: 40px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer .social-icons {
+            margin: 20px 0;
+        }
+
+        footer .social-icons a {
+            font-size: 30px;
+            color: #e0e0e0;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-icons a:hover {
+            color: #f0a0c0;
+        }
+
+        footer .footer-text {
+            margin-top: 10px;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+    </style>
+    <script>
+        function displayNutrition() {
+            var breed = document.getElementById("cowBreed").value.toLowerCase().replace(" ", "-");
+            if (breed) {
+                window.location.href = breed + "-cow.html";
+            } else {
+                alert("Please select a cow breed.");
+            }
+        }
+        
+        function openDietPage() {
+            window.location.href = "diet.html";
+        }
+        function importanceOfCow() {
+    window.location.href = "importance.html";
+}
+    </script>
+</head>
+<body>
+    <header>
+        <h2>The Cow Companion</h2>
+        <p>Enhancing the Health and Productivity of Cows</p>
+    </header>
+    <div class="container">
+        <h5>"Let’s nurture and protect cows with love and care."</h5>
+        <div class="mb-3">
+            <select id="cowBreed" class="form-select">
+                <option value="">Select a cow breed</option>
+                <option value="Gir">Gir</option>
+                <option value="Rathi">Rathi</option>
+                <option value="Red Sindhi">Red Sindhi</option>
+                <option value="Kankrej">Kankrej</option>
+                <option value="Sahiwal">Sahiwal</option>
+                <option value="Gangatiri">Gangatiri</option>
+                <option value="Dangi">Dangi</option>
+                <option value="Nimari">Nimari</option>
+                <option value="Malvi">Malvi</option>
+                <option value="Hallikar">Hallikar</option>
+                <option value="Amritmahal">Amritmahal</option>
+                <option value="Khillari">Khillari</option>
+                <option value="Kangayam">Kangayam</option>
+                <option value="Bargur">Bargur</option>
+                <option value="Pulikulam">Pulikulam</option>
+                <option value="Alambadi">Alambadi</option>
+                <option value="Tharparkar">Tharparkar</option>
+                <option value="Hariana">Hariana</option>
+                <option value="Ongole">Ongole</option>
+                <option value="Krishna Valley">Krishna Valley</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" onclick="displayNutrition()">Discover Breed Information</button>
+        <button class="btn btn-primary" onclick="importanceOfCow()">Importance of Indian Cow</button>
+        <button class="btn btn-primary" onclick="openDietPage()">Unlock Diet Guide for Cows</button>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://wa.me/6353394653" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/harmi_119" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:harmiitmbu9@gmail.com" target="_blank" title="Gmail">
+                <i class="fab fa-google"></i>
+            </a>
+        </div>
+        <div class="footer-text">
+            © 2025 The Cow Companion | Honoring Cows, Honoring Tradition
+        </div>
+    </footer>
+</body>
+</html>
